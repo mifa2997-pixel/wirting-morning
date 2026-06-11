@@ -1,0 +1,82 @@
+/* 기본 본문 폰트 설정 및 배경색 지정 */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #f3ebfc;
+}
+
+.title-font {
+    font-family: 'Jua', sans-serif;
+}
+
+.btn-bounce {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-bounce:active {
+    transform: scale(0.97);
+}
+
+/* 하단 탭 배너 */
+.nav-tab {
+    color: #b0a0c0;
+}
+
+.nav-tab.active {
+    color: #794acf;
+    background-color: #faf5ff;
+    border-top: 3px solid #794acf;
+}
+
+.nav-tab:not(.active):hover {
+    color: #9e7ecc;
+    background-color: #fdfaff;
+}
+
+/* 주제 체크박스 항목 */
+.topic-item:has(input:checked) {
+    background-color: #f3ebfc;
+    border-color: #794acf;
+}
+
+/* 기록 카드 */
+.history-card {
+    transition: box-shadow 0.15s ease;
+}
+
+.history-card:hover {
+    box-shadow: 0 4px 12px rgba(121, 74, 207, 0.12);
+}
+
+.history-action-btn {
+    transition: background-color 0.15s ease;
+}
+
+.history-card textarea {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.history-date-group + .history-date-group {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #e8d5f5;
+}
+
+/* 스크롤바 (주제 목록) */
+#topicList::-webkit-scrollbar {
+    width: 4px;
+}
+
+#topicList::-webkit-scrollbar-thumb {
+    background-color: #d4b8f0;
+    border-radius: 4px;
+}
+
+/* 탭 콘텐츠 스크롤 */
+.flex-grow.overflow-y-auto::-webkit-scrollbar {
+    width: 4px;
+}
+
+.flex-grow.overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: #d4b8f0;
+    border-radius: 4px;
+}
